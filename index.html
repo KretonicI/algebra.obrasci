@@ -7,16 +7,61 @@
 </head>
 <body>
     <p>
-   <form name="kontakt_obrazac" action="" method="post" enctype="text/plain" autocomplete="off">
-<label for="id ime"> Ime i prezime</label>
+   <form name="kontakt_obrazac" 
+   action="" 
+   method="post" 
+   enctype="text/plain" 
+   autocomplete="off">
+<label for="id ime"> Korisnik:</label>
 
 <br>
-    <input id="ime" type="text" required />
+    <input id="ime" type="text" required placeholder="Ime i prezime"/>
    </p>
     <p>
-        <label for="email"> email</label>
-<br>
-    <input id="email" type="email"/>
+        <br>
+        <label for="email">* Kontakt:</label>
+    <input id="email" type="email"  placeholder="email@adresa.com" required/>
+    <br>
+    <label for="tel">Telefon:</label>
+    <input id="tel" type="tel" placeholder="000 385 9xxxx">
+</p>
+
+    <p>
+        <label for="spol">Spol:</label>
+        <br>
+        <input id="ono" type="radio"value="Ž" name="spol" checked>
+        <label for="ono">Ne želim se indentificirati</label>
+        
+        <br>
+        <input id="M" type="radio" value="M" name="spol">
+        <label for="M">M</label>
+        
+        <br>
+        <input id="Ž" type="radio"value="Ž" name="spol">
+        <label for="Ž">Ž</label>
+    </p>
+    <p>
+        <br>
+        <label for="opis">* Opis problema:</label>
+        <br>
+        <textarea id="opis" name="opis" rows="7" cols="50" maxlength="200" 
+        placeholder="unesite do 200 znakova" required>
+ </textarea>
+    </p>
+    <p>
+        <input type="submit" value="Pošalji"/>
+
+    </p>
+        
+        
+
+
+        <!--
+            <select id="spol" name="spol">
+        
+            <option vaule="M">M</option>
+            <option value="Ž">Ž</option>
+        </select> -->
     </p>
    </form>
 
