@@ -51,20 +51,77 @@
     </p>
     <p>
         <label for="datum">Datum prijave</label>
-        <input id="datum" type="date" min="2024-02-18" max="2024-02-28"
+        <input id="datum" type="date" min="2024-02-18" max="2024-02-28">
     </p>
     <p>
         <input type="submit" value="Pošalji"/>
         <input type="reset" value="Resetiraj podatke">
-
     </p>
     <br>
+    <p>
+        <!--obavezno polje min 3 a max 10 znakova jer je kupac tako tražio-->
+<label for="username">Korisničko ime:</label> <br>
+<input id="username" type="text" minlength="3" maxlength="10" required/>
+<br>
+<label for="password">Zaporka:</label> <br>
+<input id="password" type="password"/> <br>
+    </p>
+    <p>
+        <label for="colorpicker">Odaberite boju</label>
+        <input id="boja" type="color"/> <br>
+    </p>
+
     <p>
         <label for="dokument">Dokument privitak</label>
         <input id="dokument" type="file">
     </p>
     <br>
-        
+<p>
+    <input id="Odaberite" type="checkbox" checked/>
+    <label for="Odaberite">Želite li obavijesti na mail</label>
+    <br>
+    <input id="Odaberite 1" type="checkbox" />
+    <label for="Odaberite 1">Suglasan sam za GDPR</label>
+    <br>
+</p>
+<p>
+    Ocijenite sadržaj stranice <br>
+    <label for="O1">1</label>
+    <input id="O1" name="Ocjena" type="radio"/>
+    <label for="O2">2</label>
+    <input id="O2" name="Ocjena" type="radio"/>
+    <label for="O3">3</label>
+    <input id="O3" name="Ocjena" type="radio" />
+    <label for="O4">4</label>
+    <input id="O4" name="Ocjena" type="radio"/>
+    <label for="O5">5</label>
+    <input id="O5" name="Ocjena" type="radio" checked/>
+    <br>
+    
+</p>
+<p>
+    <label for="grad">Odabrite grad</label> <br>
+    <select id="grad">
+        <option>London</option>
+        <option>Rim</option>
+        <option>Pariz</option>
+        <option selected>Zagreb</option>
+        <option>Osijek</option>
+    </select>
+    <br>
+</p>
+     
+<p>
+    <label for="grad2">Traži grad</label><br>
+    <input id="grad2" type="text" list="gradovi" />
+    <datalist id="gradovi">
+        <option>London</option>
+        <option>Rim</option>
+        <option>Pariz</option>
+        <option selected>Zagreb</option>
+        <option>Osijek</option>
+    </datalist>
+</p>
         
 
 
