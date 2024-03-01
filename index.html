@@ -1,138 +1,25 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obrasci</title>
+    <title>Strukturiranje sadržaja</title>
 </head>
 <body>
-    <p>
-   <form name="kontakt_obrazac" 
-   action="" 
-   method="post" 
-   enctype="text/plain" 
-   autocomplete="off">
-<label for="id ime"> Korisnik:</label>
+    <header>
+        <h1> Moja semanitčka stranica</h1>
+        <hr>
+        <nav>
+        <a href="#">Prazan</a> |
+        <a href="./obrasci_primjeri.html">Link na primjere obrazaca</a> |
+        <a href="https://google.hr/ncr" target="_blank">Google</a> |
+        </nav>
+    </header>
+    <main>
+        <p>Ovdije se nalazi glavni dio stranice</p>
 
-<br>
-    <input id="ime" type="text" required placeholder="Ime i prezime"/>
-   </p>
-    <p>
-        <br>
-        <label for="email">* Kontakt:</label>
-    <input id="email" type="email"  placeholder="email@adresa.com" required/>
-    <br>
-    <label for="tel">Telefon:</label>
-    <input id="tel" type="tel" placeholder="000 385 9xxxx">
-</p>
-
-    <p>
-        <label for="spol">Spol:</label>
-        <br>
-        <input id="ono" type="radio"value="Ž" name="spol" checked>
-        <label for="ono">Ne želim se indentificirati</label>
-        
-        <br>
-        <input id="M" type="radio" value="M" name="spol">
-        <label for="M">M</label>
-        
-        <br>
-        <input id="Ž" type="radio"value="Ž" name="spol">
-        <label for="Ž">Ž</label>
-    </p>
-    <p>
-        <br>
-        <label for="opis">* Opis problema:</label>
-        <br>
-        <textarea id="opis" name="opis" rows="7" cols="50" maxlength="200" 
-        placeholder="unesite do 200 znakova" required>
- </textarea>
-
-    </p>
-    <p>
-        <label for="datum">Datum prijave</label>
-        <input id="datum" type="date" min="2024-02-18" max="2024-02-28">
-    </p>
-    <p>
-        <input type="submit" value="Pošalji"/>
-        <input type="reset" value="Resetiraj podatke">
-    </p>
-    <br>
-    <p>
-        <!--obavezno polje min 3 a max 10 znakova jer je kupac tako tražio-->
-<label for="username">Korisničko ime:</label> <br>
-<input id="username" type="text" minlength="3" maxlength="10" required/>
-<br>
-<label for="password">Zaporka:</label> <br>
-<input id="password" type="password"/> <br>
-    </p>
-    <p>
-        <label for="colorpicker">Odaberite boju</label>
-        <input id="boja" type="color"/> <br>
-    </p>
-
-    <p>
-        <label for="dokument">Dokument privitak</label>
-        <input id="dokument" type="file">
-    </p>
-    <br>
-<p>
-    <input id="Odaberite" type="checkbox" checked/>
-    <label for="Odaberite">Želite li obavijesti na mail</label>
-    <br>
-    <input id="Odaberite 1" type="checkbox" />
-    <label for="Odaberite 1">Suglasan sam za GDPR</label>
-    <br>
-</p>
-<p>
-    Ocijenite sadržaj stranice <br>
-    <label for="O1">1</label>
-    <input id="O1" name="Ocjena" type="radio"/>
-    <label for="O2">2</label>
-    <input id="O2" name="Ocjena" type="radio"/>
-    <label for="O3">3</label>
-    <input id="O3" name="Ocjena" type="radio" />
-    <label for="O4">4</label>
-    <input id="O4" name="Ocjena" type="radio"/>
-    <label for="O5">5</label>
-    <input id="O5" name="Ocjena" type="radio" checked/>
-    <br>
+    </main>
+    <footer>Moje ime firme j.d.o.o.</footer>
     
-</p>
-<p>
-    <label for="grad">Odabrite grad</label> <br>
-    <select id="grad">
-        <option>London</option>
-        <option>Rim</option>
-        <option>Pariz</option>
-        <option selected>Zagreb</option>
-        <option>Osijek</option>
-    </select>
-    <br>
-</p>
-     
-<p>
-    <label for="grad2">Traži grad</label><br>
-    <input id="grad2" type="text" list="gradovi" />
-    <datalist id="gradovi">
-        <option>London</option>
-        <option>Rim</option>
-        <option>Pariz</option>
-        <option selected>Zagreb</option>
-        <option>Osijek</option>
-    </datalist>
-</p>
-        
-
-
-        <!--
-            <select id="spol" name="spol">
-        
-            <option vaule="M">M</option>
-            <option value="Ž">Ž</option>
-        </select> -->
-    </p>
-   </form>
-
 </body>
 </html>
